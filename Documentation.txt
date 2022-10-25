@@ -43,15 +43,6 @@ pip install sqlparse==0.4.2
 pip install tomli==2.0.1
 pip install tzdata==2022.1
 
-4. INSTALLATIONS
-Instructions
---------------
-pip install django
-pip install djongo
-pip install pytz
-pip install dnspython
-pip install pymongo==3.12.3
-
 2.CREATING AND RUNNING DJANGO PROJECT
 2.1 Create the Django project
 In the VS Code Terminal where your virtual environment is activated, run the following command:
