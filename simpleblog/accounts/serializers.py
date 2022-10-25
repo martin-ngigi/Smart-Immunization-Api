@@ -12,7 +12,10 @@ class SignUpSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["email", "username", "password"]
+        # fields = ["email", "username", "password", "phone"]
+        
+        # '__all__' means we will use all the fields
+        fields = '__all__'
 
     def validate(self, attrs):
 

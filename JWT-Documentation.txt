@@ -8,12 +8,17 @@ pip install requirements.txt
 
 1. POST -> (singup) register account:
  endpoint -> http://127.0.0.1:8000/auth/signup/
+ NB: Date-format -> YYYY-MM-DD
  chose body then raw then in the text, chose json and paste the following:
-    {
-        "email":"admin@gmail.com",
-        "username":"admin",
-        "password":"12345678"
-    }
+{
+    "email": "martinwainaina002@gmail.com",
+    "username": "wainaina2",
+    "phone": "0797292290",
+    "first_name": "Martin",
+    "last_name": "Wainaina",
+    "date_of_birth": "1999-11-23",
+    "password": "12345678"
+}
 
 2. POST ->(create auth token):
     endpoint -> http://127.0.0.1:8000/auth/jwt/create/
