@@ -13,6 +13,9 @@ class CustomUserManager(BaseUserManager):
 
         user.set_password(password)
 
+        # While registering in android, is_active=false. which we need it to be true so as to allow users to login in after registration
+        user.is_active=True
+
         user.save()
 
         return user
