@@ -1,4 +1,5 @@
 1.SETTING UP 
+-----------
 1.1 create a virtual environment named .venv based on your current interpreter:
     # Linux
     sudo apt-get install python3-venv    # If needed
