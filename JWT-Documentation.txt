@@ -5,7 +5,8 @@ POSTMAN : Use JWT Django.postman-collection.json
 Intall:
 pip install requirements.txt
 
-
+ENDPOINTS IN POSTMAN
+---------------------------
 1. POST -> (singup) register account:
  endpoint -> http://127.0.0.1:8000/auth/signup/
  NB: Date-format -> YYYY-MM-DD
@@ -114,3 +115,17 @@ Result:
         "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2Njc1NTI4MiwiaWF0IjoxNjY2NjY4ODgyLCJqdGkiOiI3ZjY5YzAwMjkxMzY0ZTI0OWE1YTU4ZmU4YjE0ODQ3NiIsInVzZXJfaWQiOjN9.32xlQ0kuVUjOqJ5DoDaMJ3FQVDlfP0R5O94hGr5hKI8"
     }
 }
+
+
+USING NGROK TO MAKE MY SERVER GLOBAL
+-----------------------------------
+1. In the settings, change "ALLOWED_HOSTS = []" with "ALLOWED_HOSTS = ["*"]"
+2.from ngrok.com, click authentication.
+3. copy "ngrok config add-authtoken 2GFYbjaypXE69CpJQWzJLItkuyp_5sdUT1njCwmYqh89kK1MP" and run  it in the installed ngrok termial
+4. run in ngrok terminal: ngrok http 8000
+5. then copy the forwading url ie:
+        https://ed4e-41-80-98-18.in.ngrok.io
+
+6. replace "http://127.0.0.1:8000" with "https://ed4e-41-80-98-18.in.ngrok.io" in the endpoints.... 
+8. Run server
+9. Now can test using other devices
